@@ -1,3 +1,10 @@
+body{
+    background-color: darkseagreen;
+}
+.count-side{
+    background-color:lightcyan;
+    margin: 5px;
+}
 .save-input{
     display: inline;
     font-size:large;
