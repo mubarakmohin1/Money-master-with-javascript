@@ -3,3 +3,7 @@
     font-size:large;
     font-weight: 600;
 }
+.verify{
+    display: none;
+    border-radius: 10px;
+}

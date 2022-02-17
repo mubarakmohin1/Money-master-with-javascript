@@ -10,26 +10,26 @@
 
 </head>
 <body>
-     <section class="mt-12">
+     <section class="mt-12 bg-slate-100">
          <h1 class="text-center text-4xl pb-6">Play with money</h1>
-         <div class="grid grid-cols-2 gap-4 ">
+         <div class="sm:grid grid-cols-2 gap-4 ">
             <div class="pl-12 py-6">
-                <img src="image/download.jpg" alt="">
+                <img class=" mt-24" src="image/imag.jpg" alt="">
    
             </div>
             <div class="pl-12 py-6">
-               <h2 class="pl-16 text-2xl">Income</h2>
-               <h3>Income:</h3>
+               <h2 class="pl-16 mb-4 text-2xl">Income</h2>
+               <h3 class="inline">Income:</h3>
                <input id="income-total" class="border-gray-400 rounded w-30 bg-gray-200 pl-4 " type="number">
-               <h2 class="pl-16 text-2xl pt-4">Expenses</h2>
-               <h3>Food:</h3>
-               <input id="food-expense"  class="border-gray-400 rounded w-30 bg-gray-200 pl-4 " type="number">
-               <h3>Rent:</h3>
-               <input id="rent-expense" class="border-gray-400 rounded w-304 bg-gray-200 pl-4 " type="number">
-               <h3>Clothes:</h3>
-               <input id="clothe-expense" class="border-gray-400 rounded w-30 bg-gray-200 pl-4 " type="number"> <br>
-               <button id="calculate-btn" class="bg-blue-400 text-white py-2 px-4 rounded mt-2 text-xl">calculate</button>
-               <h2 class="pt-2 text-2xl">Total Expenses:<span id="total-expense">0</span> </h2>
+               <h2 class="pl-16 text-2xl mb-4 pt-4">Expenses</h2>
+               <h3 class="inline">Food:</h3>
+               <input id="food-expense"  class="border-gray-400 rounded ml-4 w-30 bg-gray-200 pl-4 " type="number"> <br>
+               <h3 class="inline">Rent  :</h3>
+               <input id="rent-expense" class="border-gray-400 rounded w-304 bg-gray-200 ml-4 mt-2 pl-4 " type="number"> <br>
+               <h3 class="inline">Clothes:</h3>
+               <input id="clothe-expense" class="border-gray-400 rounded w-30 bg-gray-200 pl-4 mt-2 " type="number"> <br>
+               <button id="calculate-btn" class="bg-blue-400 text-white py-2 px-4 ml-16 rounded mt-4 text-xl">calculate</button>
+               <h2 class="pt-4 text-2xl">Total Expenses:<span id="total-expense">0</span> </h2>
                <h2 class="pt-2 text-2xl pb-6">Balance:<span id="last-balance">0</span> </h2>
                 
                <h3 class=" save-input">save:</h3>
@@ -40,6 +40,10 @@
                
 
                 </div>
+         </div>
+         <div class="verifing-show text-center mt-4">
+            <p id="verify-success" class="verify text-green-800 text-2xl">Yea! matching your input</p>
+            <p id="verify-fail" class="verify text-red-800 text-2xl">error!not matching your input</p>
          </div>
      </section>
    <script src="money.js"></script> 
