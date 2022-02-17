@@ -10,7 +10,38 @@
 
 </head>
 <body>
-    <h1 class="text-center">assainment 4</h1>
+     <section class="mt-12">
+         <h1 class="text-center text-4xl pb-6">Play with money</h1>
+         <div class="grid grid-cols-2 gap-4 ">
+            <div class="pl-12 py-6">
+                <img src="image/download.jpg" alt="">
+   
+            </div>
+            <div class="pl-12 py-6">
+               <h2 class="pl-16 text-2xl">Income</h2>
+               <h3>Income:</h3>
+               <input id="income-total" class="border-gray-400 rounded w-30 bg-gray-200 pl-4 " type="number">
+               <h2 class="pl-16 text-2xl pt-4">Expenses</h2>
+               <h3>Food:</h3>
+               <input id="food-expense"  class="border-gray-400 rounded w-30 bg-gray-200 pl-4 " type="number">
+               <h3>Rent:</h3>
+               <input id="rent-expense" class="border-gray-400 rounded w-304 bg-gray-200 pl-4 " type="number">
+               <h3>Clothes:</h3>
+               <input id="clothe-expense" class="border-gray-400 rounded w-30 bg-gray-200 pl-4 " type="number"> <br>
+               <button id="calculate-btn" class="bg-blue-400 text-white py-2 px-4 rounded mt-2 text-xl">calculate</button>
+               <h2 class="pt-2 text-2xl">Total Expenses:<span id="total-expense">0</span> </h2>
+               <h2 class="pt-2 text-2xl pb-6">Balance:<span id="last-balance">0</span> </h2>
+                
+               <h3 class=" save-input">save:</h3>
+               <input id="save-parcent" class=" border-gray-400 rounded w-1/4 bg-gray-200 pl-4 " type="number"> <span> % </span>
+               <button id="save-btn" class="bg-blue-400 text-white py-2 px-4 rounded mt-2 text-xl">Save</button>
+               <h2 class="pt-2 text-2xl">Saving Amount:<span id="save-amount">0</span> </h2>
+               <h2 class="pt-2 text-2xl">Remaining Balance:<span id="remain-balance">0</span> </h2>
+               
+
+                </div>
+         </div>
+     </section>
    <script src="money.js"></script> 
 </body>
 </html>
